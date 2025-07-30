@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" prefHeight="600.0" prefWidth="800.0" spacing="15.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gabriel.ecomms.ProductBrowseController">
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+   <children>
+      <Label text="Shop All Merch">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER_LEFT" spacing="10.0">
+         <children>
+            <Label text="Filter by Category:" />
+            <ComboBox fx:id="categoryFilterComboBox" prefWidth="150.0" promptText="All Categories" />
+            <Label text="Filter by Artist:" />
+            <ComboBox fx:id="artistFilterComboBox" prefWidth="150.0" promptText="All Artists" />
+            <HBox HBox.hgrow="ALWAYS" />
+            <TextField fx:id="searchField" promptText="Search products..." prefWidth="200.0" />
+         </children>
+      </HBox>
+      <ScrollPane fitToWidth="true" VBox.vgrow="ALWAYS">
+         <content>
+            <GridPane fx:id="productGrid" hgap="15.0" vgap="15.0">
+               <!-- Product cards will be dynamically added here -->
+            </GridPane>
+         </content>
+      </ScrollPane>
+   </children>
+</VBox>

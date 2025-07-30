@@ -1,0 +1,91 @@
+.root {
+    -fx-background-color: #FFFBF5; /* Warm Cream */
+}
+
+.label {
+    -fx-text-fill: #4A4A4A; /* Charcoal Gray */
+    -fx-font-family: "Nunito Sans";
+}
+
+.button {
+    -fx-background-color: #F6F1F8; /* Light Lavender */
+    -fx-text-fill: #4A4A4A;
+    -fx-border-color: #D1C4E9; /* Muted Lavender */
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-padding: 8 15 8 15;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 5, 0, 0, 2);
+    -fx-transition: all 0.2s ease-in-out;
+}
+
+.button:hover {
+    -fx-background-color: #E8E0F0;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.15), 8, 0, 0, 3);
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+/* Call-to-action button style */
+.button-cta {
+    -fx-background-color: #FF6B6B; /* Vibrant Coral */
+    -fx-text-fill: #FFFFFF;
+    -fx-border-color: #FF6B6B;
+}
+
+.button-cta:hover {
+    -fx-background-color: #FF8787;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+
+.list-view {
+    -fx-background-color: transparent;
+    -fx-border-color: #D1C4E9;
+    -fx-border-radius: 8;
+}
+
+.list-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: #4A4A4A;
+    -fx-padding: 10;
+    -fx-background-radius: 8;
+    -fx-font-size: 14pt;
+}
+
+.list-cell:filled:hover {
+    -fx-background-color: #F6F1F8; /* Light Lavender on hover */
+    -fx-scale-x: 1.02;
+    -fx-scale-y: 1.02;
+}
+
+.list-cell:filled:selected, .list-cell:filled:selected:focused {
+    -fx-background-color: #D1C4E9; /* Muted Lavender for selection */
+    -fx-text-fill: #4A4A4A;
+}
+
+.text-field {
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill: #4A4A4A;
+    -fx-border-color: #D1C4E9;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-font-size: 13pt;
+}
+
+.combo-box {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #D1C4E9;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+}
+
+.combo-box .list-cell {
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill: #4A4A4A;
+}
+
+.combo-box-popup .list-view .list-cell:filled:hover {
+    -fx-background-color: #F6F1F8;
+}
