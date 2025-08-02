@@ -5,9 +5,9 @@ spring:
    application: 
       name: Korean Merch Shop
    datasource: 
-      url: jdbc:mysql://localhost:3306/ecomdbm?allowPublicKeyRetrieval=true&createDatabaseIfNotExist=true&useSSL=false
+      url: jdbc:mysql://localhost:3306/ecomdb?allowPublicKeyRetrieval=true&createDatabaseIfNotExist=true&useSSL=false
       username: root
-      password: root
+      password: mysql
       driver-class-name: com.mysql.cj.jdbc.Driver
    jpa: 
       show-sql: true
