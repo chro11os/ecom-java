@@ -1,6 +1,6 @@
 com/gabriel/ecomms/DataLoader.class
-com/gabriel/ecomms/controller/EcommerceController.class
 com/gabriel/ecomms/serviceimpl/ProductServiceImpl.class
+com/gabriel/ecomms/controller/EcommerceController.class
 com/gabriel/ecomms/controller/ProductController.class
 com/gabriel/ecomms/serviceimpl/CategoryServiceImpl.class
 com/gabriel/ecomms/controller/CategoryController.class
